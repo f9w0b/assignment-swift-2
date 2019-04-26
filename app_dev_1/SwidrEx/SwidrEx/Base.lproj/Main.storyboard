@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="42s-Pf-xd5">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwidrEx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UY5-hB-lCO">
+                                <rect key="frame" x="0.0" y="64" width="414" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Cfl-3Q-ax7"/>
+                                    <constraint firstAttribute="height" constant="264" id="cCZ-76-jj2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="EVl-hG-ggk" kind="show" id="lbL-j3-XZz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Tokyo" translatesAutoresizingMaskIntoConstraints="NO" id="Gl7-T6-IqO">
+                                <rect key="frame" x="0.0" y="477" width="414" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="5Kc-RC-ovG"/>
+                                    <constraint firstAttribute="width" constant="414" id="dg8-86-4di"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Singapore" translatesAutoresizingMaskIntoConstraints="NO" id="nyD-IN-FGa">
+                                <rect key="frame" x="0.0" y="64" width="414" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="3DL-xO-koR"/>
+                                    <constraint firstAttribute="height" constant="264" id="woN-c0-Z5i"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvV-8W-k9p">
+                                <rect key="frame" x="0.0" y="477" width="414" height="259"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="259" id="AoY-P7-6LF"/>
+                                    <constraint firstAttribute="width" constant="414" id="SjX-lA-RHe"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="RPS-m7-FdR" kind="show" id="Jpz-kK-pNQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Your Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elH-km-bcx">
+                                <rect key="frame" x="0.0" y="328" width="414" height="149"/>
+                                <color key="backgroundColor" red="0.0" green="0.65739924634027602" blue="1" alpha="0.44691780821917809" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="5lK-Ks-pGH"/>
+                                    <constraint firstAttribute="height" constant="149" id="UIl-uJ-7b2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gl7-T6-IqO" firstAttribute="top" secondItem="elH-km-bcx" secondAttribute="bottom" id="6tV-Fm-CXp"/>
+                            <constraint firstItem="UY5-hB-lCO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DnK-tN-yW8"/>
+                            <constraint firstItem="nyD-IN-FGa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PyB-Ya-xAd"/>
+                            <constraint firstItem="nyD-IN-FGa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V9x-Fd-0k7"/>
+                            <constraint firstItem="elH-km-bcx" firstAttribute="top" secondItem="nyD-IN-FGa" secondAttribute="bottom" id="Vfa-qg-yJM"/>
+                            <constraint firstItem="elH-km-bcx" firstAttribute="top" secondItem="UY5-hB-lCO" secondAttribute="bottom" id="W9g-Rz-iUk"/>
+                            <constraint firstItem="nyD-IN-FGa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="e6J-LH-7Wa"/>
+                            <constraint firstItem="FvV-8W-k9p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fsG-xb-nVS"/>
+                            <constraint firstItem="Gl7-T6-IqO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tNa-WK-6Wj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xf8-VW-UC3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234.78260869565219" y="18.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cQ5-6p-FCU">
+            <objects>
+                <viewController id="RPS-m7-FdR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JN3-0Z-ig0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tokyo" translatesAutoresizingMaskIntoConstraints="NO" id="M5R-Ej-f1M">
+                                <rect key="frame" x="0.0" y="64" width="414" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1280px-Flag_of_Japan.svg" translatesAutoresizingMaskIntoConstraints="NO" id="C5d-g8-VhP">
+                                <rect key="frame" x="0.0" y="386" width="414" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DoR-2k-tyZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fen-Mm-5dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321.7391304347827" y="411.68478260869568"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zzV-DZ-5ck">
+            <objects>
+                <viewController id="EVl-hG-ggk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMT-Ri-0SR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="singapore-flag" translatesAutoresizingMaskIntoConstraints="NO" id="ATV-bK-oEd">
+                                <rect key="frame" x="0.0" y="382" width="414" height="354"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Singapore" translatesAutoresizingMaskIntoConstraints="NO" id="vGl-ZE-p9t">
+                                <rect key="frame" x="0.0" y="64" width="414" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="x1u-cl-MZE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7Y-5B-Rlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321.7391304347827" y="-305.70652173913044"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f2K-Gv-hZm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="42s-Pf-xd5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="69q-WK-drp">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ACs-eq-hkw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIL-bk-EnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-675.36231884057975" y="18.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1280px-Flag_of_Japan.svg" width="1280" height="853"/>
+        <image name="Singapore" width="240" height="180"/>
+        <image name="Tokyo" width="640" height="427"/>
+        <image name="singapore-flag" width="1200" height="800"/>
+    </resources>
+</document>
